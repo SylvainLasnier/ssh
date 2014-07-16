@@ -22,6 +22,8 @@ RUN echo root:root | chpasswd
 # supervisor setup
 ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
+VOLUME /var/log
+
 EXPOSE 22
 
 # supervisor rule them all
