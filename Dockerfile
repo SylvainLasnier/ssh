@@ -22,5 +22,5 @@ RUN echo root:root | chpasswd
 
 EXPOSE 22
 
-# supervisor drive lthe daemon
+# supervisor rule them all
 CMD ["/usr/local/bin/supervisord","-n"]
