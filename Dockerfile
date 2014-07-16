@@ -7,7 +7,7 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update
 RUN apt-get -y install openssh-server supervisor
 
-# Setup ssh environement
+# Setup sshd environement
 RUN mkdir -p /var/run/sshd
 RUN chmod 755 /var/run/sshd
 
@@ -19,6 +19,8 @@ RUN sed -ri 's/PermitRootLogin without-password/PermitRootLogin yes/g' /etc/ssh/
 # Setup root password as root
 RUN echo root:root | chpasswd
 
+# supervisor setup
+ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 EXPOSE 22
 
