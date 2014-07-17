@@ -27,4 +27,4 @@ VOLUME /var/log
 EXPOSE 22
 
 # supervisor rule them all
-CMD ["/usr/local/bin/supervisord","-n"]
+CMD ["/usr/bin/supervisord","-n"]
