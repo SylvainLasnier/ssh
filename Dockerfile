@@ -15,10 +15,6 @@ RUN sed -ri 's/UsePAM yes/#UsePAM yes/g' /etc/ssh/sshd_config
 RUN sed -ri 's/#UsePAM no/UsePAM no/g' /etc/ssh/sshd_config
 RUN sed -ri 's/PermitRootLogin without-password/PermitRootLogin yes/g' /etc/ssh/sshd_config
 
-
-# Setup root password as root
-#RUN echo root:root | chpasswd
-
 # supervisor setup
 ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
