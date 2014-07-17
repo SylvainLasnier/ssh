@@ -17,7 +17,7 @@ RUN sed -ri 's/PermitRootLogin without-password/PermitRootLogin yes/g' /etc/ssh/
 
 
 # Setup root password as root
-RUN echo root:root | chpasswd
+#RUN echo root:root | chpasswd
 
 # supervisor setup
 ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
