@@ -46,3 +46,8 @@ Just declare proxy localhost:2280 to use this tunnel.
  	root@a2eb927638bd:~# ssh 172.17.0.5
 	root@2906ec20ad16:~#
 	
+
+And last but not least, you can build your own awesome VM based on this image.
+
+I use these docker images in production and I assume update.
+Have fun and try my other [docker images](https://hub.docker.com/u/sylvainlasnier/) ^^
