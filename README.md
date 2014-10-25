@@ -5,14 +5,14 @@ SSH service docker image
 Description
 -----------
 
-This is ssh image based on Ubuntu 14.04 LTS docker image https://github.com/SylvainLasnier/ubuntu/  
+This is ssh image based on Ubuntu 14.10 docker image https://github.com/SylvainLasnier/ubuntu/  
 SSH is note really usefull in production but could help to make some test
 
 
 Usage
 -----
 
-User and password are 'root' word.
+'root' word is the root user password.
 
  **Tunnelling ssh service**:
 
@@ -49,5 +49,5 @@ Just declare proxy localhost:2280 to use this tunnel.
 
 And last but not least, you can build your own awesome VM based on this image.
 
-I use these docker images in production and I assume update.
+I use these docker images in production and I assume update.  
 Have fun and try my other [docker images](https://hub.docker.com/u/sylvainlasnier/) ^^
