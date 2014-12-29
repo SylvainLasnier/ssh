@@ -18,7 +18,7 @@ RUN sed -ri 's/PermitRootLogin without-password/PermitRootLogin yes/g' /etc/ssh/
 # supervisor setup
 ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
-VOLUME /var/log
+VOLUME /root
 
 EXPOSE 22
 
